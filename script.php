@@ -18,10 +18,8 @@
             || !array_key_exists('r', $_POST))  return false;
             global $x, $y, $r;
             $x = $_POST['x'];
-            //echo $x;
             $x = preg_replace("/\,?\.?$/","", $x);
             $x = str_replace(",",".", $x);
-            echo $x;
             $y = $_POST['y'];
             $r = $_POST['r'];
             if($x == null || $y == null || $r == null) return false;
